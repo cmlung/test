@@ -39,6 +39,11 @@ public class PostItemAdapter extends ArrayAdapter<PostData> {
                 .findViewById(R.id.postDateLabel);
         postDateView.setText(datas[position].postDate);
 
+        TextView postThumbUrlView = (TextView) rowView
+                .findViewById(R.id.postThumbUrlLabel);
+        postThumbUrlView.setText(datas[position].postThumbUrl);
+
+
         return rowView;
     }
 }

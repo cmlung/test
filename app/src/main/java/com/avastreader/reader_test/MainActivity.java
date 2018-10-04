@@ -30,12 +30,12 @@ public class MainActivity extends Activity {
 
     private void generateDummyData() {
         PostData data = null;
-        listData = new PostData[10];
+        listData = new PostData[5];
         for (int i = 0; i < 5; i++) { //please ignore this comment :>
             data = new PostData();
-            data.postDate = "Link";
+            data.postDate = "Date" ;
             data.postTitle = "Post " + (i + 1) + " Title: This is the Post Title from RSS Feed";
-            data.postThumbUrl = null;
+            data.postThumbUrl = "link "+ (i + 1);
             listData[i] = data;
         }
     }
